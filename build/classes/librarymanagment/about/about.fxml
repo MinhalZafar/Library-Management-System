@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="570.0" prefWidth="709.0" stylesheets="@../../Resources/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="librarymanagment.about.AboutController">
+   <children>
+      <ImageView fitHeight="269.0" fitWidth="187.0" layoutX="126.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Minhal.jpg" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="173.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="about-text" text="Built with Hardwork and some sort of Logic" textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="223.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="about-text" text="Special Thanks to Youtube" textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <VBox layoutX="101.0" layoutY="349.0" prefHeight="40.0" prefWidth="229.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#loadFacebook" prefHeight="48.0" prefWidth="225.0" text="Personal Facebook Page" />
+         </children>
+      </VBox>
+      <VBox layoutX="382.0" layoutY="349.0" prefHeight="40.0" prefWidth="229.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#loadFacebook2" prefHeight="40.0" prefWidth="228.0" text="Personal Facebook Page" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="269.0" fitWidth="197.0" layoutX="390.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ali.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="13.0" layoutY="396.0" prefHeight="53.0" prefWidth="668.0">
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#loadBlog" prefHeight="40.0" prefWidth="542.0" text="Blog">
+               <VBox.margin>
+                  <Insets left="60.0" right="20.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

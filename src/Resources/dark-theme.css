@@ -1,0 +1,230 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 3, 2018, 12:26:01 PM
+    Author     : Syed Minhal
+    //#FFFF8D 
+*/
+
+* {
+    -fx-primary : #2A2E37;
+    -fx-primarytext : #B2B2B2;
+    -fx-secondary : #0288D1;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000; 
+}
+
+.root{
+    -fx-background-color: -fx-primary;
+}
+
+
+.glyph-icon
+{
+    -fx-fill: #FFFFFF;
+}
+
+
+* {
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000; 
+}
+
+
+.logintext-field
+{
+    -fx-text-fill: #0288D1;
+    -fx-font-size : 13pt;
+    -jfx-focus-color: #0288D1;
+    -fx-text-fill: derive(#0288D1, 20%);
+}
+
+.login-button{
+    -fx-text-fill: white;
+    -fx-background-color: #191931;
+    -fx-border-color: white;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-font-size: 13pt;
+}
+
+
+.login-button:hover{
+    -fx-border-color: white;
+    -fx-background-color: #0288D1;
+    -fx-text-fill: white;
+}
+
+
+/*Login Screen Specific*/
+
+
+.wrong-credentials
+{
+    -jfx-unfocus-color: -fx-red;
+    -jfx-focus-color: -fx-red;
+}
+
+.button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 13pt;
+}
+
+.text-field
+{
+    -fx-text-fill: #0288D1;
+    -fx-font-size : 13pt;
+    -jfx-focus-color: #0288D1;
+    -fx-text-fill: derive(#0288D1, 20%);
+}
+
+
+.text-field
+{
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size : 13pt;
+    -jfx-focus-color: -fx-secondary;
+    -fx-text-fill: derive(-fx-secondary, 20%);
+}
+
+
+/*Main Screen CSS Styling starts here*/
+
+/*TablPane styling*/
+.tab{
+    -fx-background-color: -fx-primary;
+    -fx-pref-width : 350;
+    -fx-pref-height : 60;
+}
+
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+}
+
+/*Menu bar Styling*/
+.menu-bar{
+    -fx-base : -fx-primary;
+    -fx-background-color: -fx-primary;
+}
+
+
+.context-menu
+{
+    -fx-background-color:  derive(-fx-primary, 20%);
+}
+
+/*Hamburger Styling*/
+.jfx-hamburger-icon{
+    -fx-spacing: 7;
+}
+
+.jfx-hamburger-icon StackPane
+{
+    -fx-background-color: -fx-secondary;
+    -fx-background-radius: 5px;
+}
+
+/*Toolbar buttons*/
+.maintoolbar-button
+{
+    -fx-background-color: #44280F;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    -fx-background-color: #44280F;
+}
+
+.maintoolbar-button:hover
+{
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.maintoolbar-button:hover .glyph-icon
+{
+    -fx-fill: -fx-primary;
+}
+
+.toolbar-button
+{
+    -fx-background-color: derive(-fx-primary, 20%);
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    -fx-background-color: -fx-primary;
+}
+.toolbar-button:hover
+{
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.toolbar-button:hover .glyph-icon
+{
+    -fx-fill: -fx-primary;
+}
+
+
+/*Text styling*/
+.main-text
+{
+    -fx-fill: -fx-secondary;
+    -fx-font-size: 14pt;
+    -fx-text-alignment: center;
+}
+
+.submission-container{
+    -fx-background-color: derive(-fx-primary, 10%);
+}
+
+
+/*Dialog styling*/
+.dialog-button{
+    -fx-background-color: -fx-blue;
+    -fx-border-color: -fx-blue;
+    -fx-text-fill: white;
+}
+
+.dialog-button:hover{
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-primary;
+    -fx-text-fill: white;
+}
+
+.jfx-layout-actions
+{
+    -fx-hgap:8;
+}
+
+/*Chart Styling*/
+.data0.chart-pie{
+    -fx-pie-color: -fx-secondary;
+    -fx-border-color: derive(black, -30%);
+}
+.data1.chart-pie{
+    -fx-pie-color: #FFFF8D;
+    -fx-border-color: derive(black, -30%)
+}
+.chart-pie-label
+{
+    -fx-fill : #FFFF8D;
+}
+
+/*About window*/
+.about-text{
+    -fx-fill: -fx-secondary;
+}
+
+.about-button{
+    -fx-border-color: transparent;
+}
+
+/*Custom window background*/
+.custom-pane{
+    -fx-background-color: derive(-fx-primary, 5%);
+}
